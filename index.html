@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Synthetic Serenade</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Orbitron&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="vaporwaveData.js"></script>
     <style>
+        * { outline: none; -webkit-tap-highlight-color: transparent; }
         body {
             background-color: #800080;
             color: #ff00ff;
             font-family: "Share Tech Mono", monospace;
-            margin: 0;
-            padding: 0;
+            margin: 0; padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,8 +43,7 @@
         
         #badge {
             position: fixed;
-            top: 0;
-            left: 0;
+            top: 0; left: 0;
             width: 40%;
             max-width: 200px;
             z-index: -1;
@@ -62,8 +60,7 @@
             display: flex;
         }
         #title .buttons span {
-            height: 12px;
-            width: 12px;
+            height: 12px; width: 12px;
             margin: 0 0.125em;
             border-radius: 50%;
             display: inline-block;
@@ -73,14 +70,6 @@
             font-size: 1.1em;
             text-align: right;
             margin-left: auto;
-        }
-        
-        #info {
-            text-align: center;
-            padding: 1.25em;
-            margin: 0;
-            line-height: 1.5;
-            border-bottom: 2px solid #ff00ff;
             font-family: "Nova Mono", monospace;
         }
         
@@ -128,8 +117,7 @@
 
         footer {
             position: fixed;
-            bottom: 0;
-            left: 3%;
+            bottom: 0; left: 3%;
             z-index: 10;
             line-height: 1.5;
             font-size: 0.80em;
@@ -146,16 +134,13 @@
             color: #EADCD7;
             border: none;
         }
-        details {
-            width: 100%;
-        }
+        details { width: 100%; }
         summary {
             display: flex;
             align-items: center;
             width: 100%;
             padding: 0.25em 1.5rem;
-            outline: none;
-            cursor: pointer;
+            outline: none; cursor: pointer;
             border-top: 1px solid #ff00ff;
             box-sizing: border-box;
             font-family: "Orbitron", monospace;
@@ -200,12 +185,7 @@
         details > div > * {
             margin-top: 0;
             margin-bottom: 1rem;
-        }
-        
-        main:focus, main:active, footer:focus, footer:active {      
-            outline: none;
-            -webkit-tap-highlight-color: transparent;       
-        }
+        } 
     </style>
 </head>
 <body>
@@ -220,7 +200,6 @@
             <span class="title-text">Synthetic Serenade</span>
             <div></div>
         </div>
-        <p id="info">Wander through the world of vaporwave aesthetics with a serenade of AI-generated vaporwave compositions on each click.</p>
         <p id="lyric"></p>
         <div class="btn" id="generateButton"><img src="generate.png"></div>
     </main>
